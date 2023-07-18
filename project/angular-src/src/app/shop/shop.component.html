@@ -1,0 +1,51 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+
+    <div class="card h-100">
+      <img src="assets/camera1.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title" style="color:#d59a9a">Basic</h5>
+        <p class="card-text">Basic surveillance protection for you home.</p>
+      </div>
+      <div class="card-footer">
+        <a *ngIf="authService.isLoggedIn() && authService.user.subscription !== 'Basic'" (click)="authService.updateSubscription('Basic');" href="/video-surveillance" class="btn btn-primary w-100">50€ month</a>
+        <a *ngIf="authService.isLoggedIn() && authService.user.subscription === 'Basic'" href="#" class="btn btn-primary disabled w-100">Subscribed</a>
+        <a *ngIf="!authService.isLoggedIn()" href="/login" class="btn btn-primary w-100">50€ month</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="assets/camera2.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title" style="color:#e0efbf">Premium</h5>
+        <p class="card-text">Our most popular surveillance system makes thieves sweat in 50m range.</p>
+
+
+      </div>
+      <div class="card-footer">
+        <a *ngIf="authService.isLoggedIn() && authService.user.subscription !== 'Premium'" (click)="authService.updateSubscription('Premium');" href="/video-surveillance" class="btn btn-primary w-100">200€ month</a>
+        <a *ngIf="authService.isLoggedIn() && authService.user.subscription === 'Premium'" href="#" class="btn btn-primary disabled w-100">Subscribed</a>
+        <a *ngIf="!authService.isLoggedIn()" href="/login" class="btn btn-primary w-100">200€ month</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="assets/camera3.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title" style="color:#bbdef5">Luxury</h5>
+        <p class="card-text">If you have to ask for the price, you cannot afford this. This surveillance system gets the video feed straight from the FBI mass surveillance system!</p>
+
+
+      </div>
+      <div class="card-footer">
+        <a *ngIf="authService.isLoggedIn() && authService.user.subscription !== 'Luxury'" (click)="authService.updateSubscription('Luxury');" href="/video-surveillance" class="btn btn-primary w-100">$$$</a>
+        <a *ngIf="authService.isLoggedIn() && authService.user.subscription === 'Luxury'" href="#" class="btn btn-primary disabled w-100">Subscribed</a>
+        <a *ngIf="!authService.isLoggedIn()" href="/login" class="btn btn-primary w-100">$$$</a>
+      </div>
+    </div>
+  </div>
+</div>

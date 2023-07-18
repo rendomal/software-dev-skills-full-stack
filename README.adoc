@@ -1,0 +1,14 @@
+This is course work for LUT University's Software Development Skills: Full-Stack 2022-23.
+
+Author Kim Venho.
+
+== How to run:
+
+* Install and launch MongoDB (Version 5)
+
+* Run the following commands to download the project and launch local server containing the site: +
+** `git clone https://github.com/rendomal/software-dev-skills-full-stack.git` +
+** `cd software-dev-skills-full-stack/project` +
+** `npm run start`
+
+Site is now up and running in http://127.0.0.1:5000
