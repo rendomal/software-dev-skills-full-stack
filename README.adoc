@@ -4,7 +4,7 @@ Author Kim Venho.
 
 == How to run:
 
-* Install and launch MongoDB (Version 5)
+* Install and launch MongoDB
 
 * Run the following commands to download the project and launch local server containing the site: +
 ** `git clone https://github.com/rendomal/software-dev-skills-full-stack.git` +
